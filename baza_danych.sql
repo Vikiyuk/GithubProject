@@ -48,6 +48,15 @@ insert into Stock values
 insert into Holding values
 (1,1,'aapl','2025-08-08',10,150,135,150);
 
+insert into User1( user_id,username,full_name,email,phone,password1) values
+(2, 'test','john doe','hgr@email.com', '4444','jfjfjf');
+insert into Portfolio values
+(2,1,'test2','2025-01-01');
+insert into Stock values
+('aap2','medicine',190,'2025-08-08',193,'USD');
+insert into Holding values
+(2,1,'HSBC','2025-08-08',10,150,135,150);
+
 
 select * from User1 join Portfolio on User1.user_id=Portfolio.user_id 
 join Holding on Portfolio.portfolio_id=Holding.
